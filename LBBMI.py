@@ -9,10 +9,10 @@ def calculate_bmi(weight_lb, height_ft, height_in):
 def main():
     try:
         weight_lb = float(input("Enter your weight in pounds: "))
-        height_ft = int(input("Enter your height in feet: "))
+        height_ft = int(input("Enter your height in feet(ft only not inches): "))
         height_in = int(input("Enter the additional inches (if any): "))
         bmi = calculate_bmi(weight_lb, height_ft, height_in)
-        print(f"Your BMI is {bmi:.2f}")
+        print(f"Your BMI is {bmi:.2f} ")
     except ValueError:
         print("Invalid input. Please enter numeric values for weight, height in feet, and additional inches.")
 
